@@ -2,11 +2,13 @@
 :root {
   --color-primary: #39445a;
   --white-color: #fff;
+  --color-dark-gray: #2d313a;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *::after,
 *::before {
@@ -39,5 +41,12 @@ body {
   line-height: 1.4;
   font-family: "Montserrat", sans-serif;
   color: var(--white-color);
+  background-color: var(--color-primary);
 }
 /* Main Css here */
+.css-16lloyr-MuiBottomNavigation-root {
+  background-color: #2d313a !important;
+}
+.page-area {
+  padding-top: 100px;
+}

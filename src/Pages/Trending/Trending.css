@@ -1,0 +1,13 @@
+.trending {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  margin: 30px 0;
+  padding-bottom: 50px;
+}
+.pageTitle {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 100;
+  font-size: 32px;
+}

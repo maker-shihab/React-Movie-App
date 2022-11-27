@@ -1,0 +1,23 @@
+.header-content {
+  padding: 15px;
+  background: var(--color-primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.289);
+  z-index: 99;
+}
+.header-content h1 {
+  font-size: 44px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  column-gap: 10px;
+  cursor: pointer;
+}
+.header-content h1 svg {
+  transform: translateY(-3px);
+}
