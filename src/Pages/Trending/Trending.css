@@ -1,9 +1,12 @@
+.page-area {
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+}
 .trending {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 15px;
   margin: 30px 0;
-  padding-bottom: 50px;
 }
 .pageTitle {
   text-align: center;

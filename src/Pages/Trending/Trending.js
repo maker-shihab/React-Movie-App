@@ -1,22 +1,22 @@
 import { Container } from '@mui/material';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import PaginationContent from '../../Components/PaginationContent/PaginationContent';
 import SingleContent from '../../Components/SingleContent/SingleContent';
 import './Trending.css';
 
 const Trending = () => {
+    const [page, setPage] = useState(1);
     const [content, setContent] = useState([]);
-
     const fetchTrending = async () => {
         const { data } = await axios.get(
-            `https://api.themoviedb.org/3/trending/all/week?api_key=4c6172be451f7b30f63d9aa35de2716e`
+            `https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`
         );
         setContent(data.results);
-        console.log(data);
     };
     useEffect(() => {
         fetchTrending();
-    }, [])
+    }, [page])
     return (
         <section className='page-area'>
             <Container>
@@ -34,8 +34,8 @@ const Trending = () => {
                         />)
                     }
                 </div>
-                
             </Container>
+            <PaginationContent setPage={setPage}/>
         </section>
     );
 };

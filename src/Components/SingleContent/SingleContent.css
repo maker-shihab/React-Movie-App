@@ -29,7 +29,7 @@
 }
 .date-item p {
   transition: 0.3s all ease-in-out;
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 300;
   color: #969899;
   display: flex;
@@ -56,6 +56,8 @@
 }
 .date-item p span {
   padding: 2px 5px;
+  color: #fff;
+  transition: 0.3s all ease-in-out;
 }
 .singleItem:hover .date-item p .head_title {
   background: #282c34;
@@ -63,6 +65,9 @@
 }
 .singleItem:hover .date-item p {
   border: 1px solid #282c34;
+}
+.singleItem:hover .date-item p span {
+  color: #000;
 }
 .singleItem .vote {
   font-size: 10px;

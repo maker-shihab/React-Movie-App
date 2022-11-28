@@ -4,7 +4,7 @@ import './SingleContent.css';
 const SingleContent = ({ id, title, poster, date, media_type, vote_average }) => {
     return (
         <div className='singleItem' id={id}>
-            <span className={vote_average >= 7 ? 'vote vote__high' : 'vote vote__low' }>
+            <span className={vote_average >= 7 ? 'vote vote__high' : 'vote vote__low'}>
                 {vote_average.toFixed(1)}
             </span>
             <div className='thumb'>
@@ -16,7 +16,7 @@ const SingleContent = ({ id, title, poster, date, media_type, vote_average }) =>
                     <p>
                         <span className='head_title'>Type</span>
                         <span>
-                            {media_type === "TV" ? "TV Series" : "Movie"}
+                            {media_type === "tv" ? "TV Series" : "Movie"}
                         </span>
                     </p>
                     <p>
